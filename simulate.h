@@ -3,5 +3,4 @@
 
 int simulate(int steps);
 
-
 #endif

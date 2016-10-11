@@ -84,7 +84,8 @@ int CountNeightbors_Edge(int r, int c){
 	if(x[r-0][P3] == ALIVE){count++;}
 	
 	
-	if(r == ((N_global / NumberOfProcessors))){
+		// Row 3.
+	if(r == ((N_global / NumberOfProcessors) - 1)){
 		if(RowBelow[P1] == ALIVE){count++;}
 		if(RowBelow[P2] == ALIVE){count++;}
 		if(RowBelow[P3] == ALIVE){count++;}
@@ -252,9 +253,9 @@ void DebugPrintCell(int r, int c, int before){
 	// Process a single cell from our local matrix.
 int Process_Cell(int r, int c){
 	
-	if(rank == 0){
-		//printf("PC: %d: %d : %d\n", r, c, GetNeightbors(r, c));
-	}
+	//if(rank == 0){
+	//	printf("Rank: %d, PC: %d: %d : %d\n", rank, r, c, GetNeightbors(r, c));
+	//}
 	
 	DebugPrintCell(r, c, 0);
 			
