@@ -1,0 +1,72 @@
+Rank: 0
+    Total runtime: 571
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 21
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 1
+    Total runtime: 565
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 3
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 2
+    Total runtime: 571
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 17
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 3
+    Total runtime: 571
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 21
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 4
+    Total runtime: 557
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 8
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 5
+    Total runtime: 549
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 0
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 6
+    Total runtime: 565
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 15
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 7
+    Total runtime: 565
+    Avg single generation: 53
+    Avg display: 0
+    MPI_Barrier: 15
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+

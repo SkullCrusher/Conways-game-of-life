@@ -1,0 +1,36 @@
+Rank: 0
+    Total runtime: 263
+    Avg single generation: 24
+    Avg display: 0
+    MPI_Barrier: 7
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 1
+    Total runtime: 256
+    Avg single generation: 24
+    Avg display: 0
+    MPI_Barrier: 0
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 2
+    Total runtime: 263
+    Avg single generation: 24
+    Avg display: 0
+    MPI_Barrier: 7
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 3
+    Total runtime: 260
+    Avg single generation: 24
+    Avg display: 0
+    MPI_Barrier: 4
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+

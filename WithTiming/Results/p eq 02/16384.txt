@@ -1,0 +1,19 @@
+2 total processes failed to start
+Rank: 0
+    Total runtime: 133836
+    Avg single generation: 13151
+    Avg display: 0
+    MPI_Barrier: 181
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
+Rank: 1
+    Total runtime: 133836
+    Avg single generation: 13139
+    Avg display: 0
+    MPI_Barrier: 124
+    MPI_Send: 0
+    MPI_Recv: 0
+    MPI_Scatter: 0
+
