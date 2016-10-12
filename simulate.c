@@ -49,7 +49,6 @@ int CountNeightbors_NonEdge(int r, int c){
 	return count;
 }
 
-
 	// Count the edge case.
 int CountNeightbors_Edge(int r, int c){
 	
@@ -219,45 +218,8 @@ int TransferRows(){
 	
 }
 
-void DebugPrintCell(int r, int c, int before){
-	return;
-	if(rank != 0){
-		return;
-	}
-	
-	int R1C1 = 0;
-	int R1C2 = 0;
-	int R1C3 = 0;
-	
-	int R2C1 = 0;
-	int R2C2 = Temp[r][c];
-	int R2C3 = 0;
-	
-	int R3C1 = 0;
-	int R3C2 = 0;
-	int R3C3 = 0;
-	
-	if(r == 0){
-		
-	}
-	
-	if(before == 0){	
-		printf("\nBefore: (%d)(%d)\n%d %d %d\n%d %d %d\n%d %d %d\n", r,c, R1C1, R1C2, R1C3, R2C1, R2C2,R2C3,R3C1,R3C2,R3C3);
-	
-	}else{
-		printf("\nAfter: (%d)(%d)\n%d %d %d\n%d %d %d\n%d %d %d\n", r,c, R1C1, R1C2, R1C3, R2C1, R2C2,R2C3,R3C1,R3C2,R3C3);
-	}
-	
-}
-
 	// Process a single cell from our local matrix.
 int Process_Cell(int r, int c){
-	
-	//if(rank == 0){
-	//	printf("Rank: %d, PC: %d: %d : %d\n", rank, r, c, GetNeightbors(r, c));
-	//}
-	
-	DebugPrintCell(r, c, 0);
 			
 		// 1. A living cell that has less than 2 living neighbors dies.
 	if(x[r][c] == ALIVE && GetNeightbors(r, c) < 2){ 
@@ -277,11 +239,10 @@ int Process_Cell(int r, int c){
 		return 0;
 	}
 	
-	DebugPrintCell(r, c, 1);
-	
 	return 0;
 }
 
+	// Simulate a single time step on the matrix.
 int SingleStepSimulate(){
 	
 		// Get the rows from the other matrixs
@@ -313,6 +274,7 @@ int SingleStepSimulate(){
 	return 0;
 }
 
+	// Simulate a matrix.
 int simulate(int steps){
 	
 	int i = 0;

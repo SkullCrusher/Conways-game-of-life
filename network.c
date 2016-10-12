@@ -53,8 +53,6 @@ int PropagateSeed(int seed){
 	return localdata;
 }
 
-
-
 	// Print out the matrix for the game of life.
 void DisplayGoL(int N){
 			

@@ -6,7 +6,7 @@
 #include <mpi.h> 
 #include <assert.h>
 #include <sys/time.h>
-#include <time.h> /* for clock_gettime */
+#include <time.h>
 
 	// The function main calls to start everything.
 int GameOfLife(int, int, int);
@@ -23,6 +23,7 @@ int NumberOfProcessors;
 	// Matrix size, N by N
 int N_global;
 
+	// How many generations.
 int Gen;
 
 #define ALIVE 1

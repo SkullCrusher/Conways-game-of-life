@@ -2,7 +2,11 @@
 #include <limits.h>  // for INT_MAX
 #include <stdlib.h>  // for strtol
 
+	// The game of life simulation.
 #include "gameoflife.h"
+
+	// Timing for the final report.
+#include "timing.h"
 
 void PrintHelp(){
 	printf("There was a problem with the commandline arguments.\n");
@@ -16,6 +20,12 @@ int main(int argc,char *argv[]){
 	MPI_Init(&argc, &argv);
 	MPI_Comm_rank(MPI_COMM_WORLD,&rank);
 	MPI_Comm_size(MPI_COMM_WORLD,&p);
+	
+		// Set up the timing.
+	InitTiming();
+	
+		// Start up the total time timer.
+	Start_Timer(Time_Total_Runtime);
 	
 	int Seed = 0;
 	int Generations = 0;
@@ -50,6 +60,12 @@ int main(int argc,char *argv[]){
 	if(Result == 0){	
 		Result = GameOfLife(Seed, N, Generations);
 	}
+	
+		// Stop the total timer.
+	End_Timer(Time_Total_Runtime);
+	
+		// Process and display all of the data.
+	Timer_Print();
 	
 		// Clean up.
 	MPI_Finalize();

@@ -44,7 +44,7 @@ int GameOfLife(int Seed, int N, int Generations){
 				
 		simulate(step);
 		
-		printf("\n");		
+		//printf("\n");		
 		
 			// Debug dump the matrix to the console.
 		DisplayGoL(N);
